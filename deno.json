@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "pin18": "deno run --allow-ffi --allow-read --allow-run gpiopins.ts",
+    "test": "deno run --allow-ffi --allow-read --allow-run test.ts",
+    "blink": "deno run --allow-ffi --allow-read --allow-run blink.ts"
+  },
+  "license": "MIT",
+  "author": ["emarti, Murat Özdemir</dtemarti@gmail.com>"],
+  "name": "@emarti/gpiopins",
+  "version": "1.0.2",
+  "description": "A module in Deno that uses FFI (Foreign Function Interface) to call the `libgpiod.so` library, enabling control of GPIO (General Purpose Input/Output) pins exclusively on systems running Linux (such as Raspberry Pi OS).",
+  "exports": "./gpiopins.ts"
+}
